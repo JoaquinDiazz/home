@@ -9,9 +9,9 @@ export const NavBar = () => {
           <h1>HOME.</h1>
           <nav>
             <ul>
-              <li>Muebles</li>
-              <li>Electrodomesticos</li>
-              <li>Plantas</li>
+              <li>Mesas</li>
+              <li>Silllas</li>
+              <li>Sofas</li>
               <li>Lamparas</li>
             </ul>
           </nav>

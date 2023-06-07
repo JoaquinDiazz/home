@@ -2,13 +2,16 @@
 
 header {
     padding: 1em 2em;
-    background-color: #11152e;
+    background-color: #0b0f2c;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: sticky;
+    top: 0;
 }
 header h1 {
     color: #e43225;
+    cursor: pointer;
 }
 header ul { 
     display: flex;
