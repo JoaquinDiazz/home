@@ -1,0 +1,19 @@
+i {
+    font-size: 22px;
+    color: white;
+    position: relative;
+}
+i span {
+    background-color: #e43225;
+    height: 19px;
+    width: 19px;
+    border-radius: 30px;
+    font-size: 12px;
+    position: absolute;
+    top: -12px;
+    right: -15px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
