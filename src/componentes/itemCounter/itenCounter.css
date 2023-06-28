@@ -1,0 +1,23 @@
+.cantidadContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid white;
+    padding-top: 2em;
+}
+.cantidadContainer .cantidad {
+    font-size:25px ;
+    letter-spacing: 1px;
+}
+.cantidadContainer .numeros {
+    display: flex;
+    align-items:  center;
+    gap: 1.5em;
+    padding:.5em 1em;
+    border: 1px solid white;
+}
+.cantidadContainer .numeros :first-child,
+.cantidadContainer .numeros :last-child {
+    cursor: pointer;
+    font-size: 20px;
+}

@@ -4,36 +4,49 @@ header {
     padding: 1em 2em;
     background-color: #0b0f2c;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     position: sticky;
     top: 0;
+    z-index: 1;
 }
-header h1 {
-    color: #e43225;
-    cursor: pointer;
-}
-header ul { 
-    display: flex;
-    gap: 1em;
-}
-header ul li {
-    list-style-type: none;
-    position: relative;
+header a {
+    text-decoration: none;
     color: white;
+}
+header .menu {
+    background-color: transparent;
+    border: none;
     cursor: pointer;
+    display: none;
 }
-header ul li::after {
-    content: "";
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-color: #e43225;
-    transition: .5s;
+header .menu svg{
+    height: 2em;
+    width: 2em;
+    fill: white;
 }
-header ul li:hover::after {
-    width: 100%;
+@media screen and (max-width: 600px) {
+    header .menu {
+        display: block;
+    }
+    header nav {
+        order: 99;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 0;
+        opacity: 0;
+        transition: .3s;
+    }
+    header nav.active {
+        height: 50vh;
+        opacity: 1;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 

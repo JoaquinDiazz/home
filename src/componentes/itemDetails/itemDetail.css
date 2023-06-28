@@ -1,0 +1,184 @@
+.itemDetail {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+.itemDetail .nombreYPrecioMobile {
+    display: none;
+}
+.itemDetail .imgContainer {
+    flex: 2;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: start;
+    gap: 1em;
+
+}
+.itemDetail .imgContainer img{
+    width: 600px;
+    order: 2;
+}
+.itemDetail .imgContainer .secondaryImg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+}
+.itemDetail .imgContainer .secondaryImg img {
+    width: 100px;
+    cursor: pointer;
+    transition: .3s;
+}
+.itemDetail .imgContainer .secondaryImg img:hover {
+    transform: scale(0.93);
+} 
+.itemDetail .detalles {
+    flex: 1;
+    color: white;
+    padding-inline: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+.itemDetail .detalles .nombreYPrecio {
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 2em;
+}
+.itemDetail .detalles .nombre  h2{
+    color: var(--rojo);
+    font-size: 35px;
+}
+.itemDetail .nombreYPrecio .nombre i{
+    font-size: 14px;
+    margin-left: .3em;
+}
+.itemDetail .nombreYPrecio .nombre p{
+    font-size: 14px;
+    display: inline-block;
+    margin-left: .5em;
+    color: white;
+}
+.itemDetail .detalles .precio {
+    font-size: 25px;
+}
+.itemDetail .detalles .descripcion h4  {
+    font-size:25px ;
+    font-weight: normal;
+    letter-spacing: 1px;
+    padding-bottom: 20px;
+}
+.itemDetail .detalles .descripcion p {
+    font-size: 14px;
+    line-height: 1.4;
+    text-align: justify;
+}
+.itemDetail .detalles button {
+    background-color: var(--rojo);
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 5px;
+}
+@media screen and (max-width: 1115px) {
+    .itemDetail .imgContainer {
+        flex-direction: column;
+    }
+    .itemDetail .imgContainer img {
+        order: 0;
+        width: 100%;
+        height: auto;
+    }
+    .itemDetail .imgContainer .secondaryImg {
+        flex-direction: row;
+    }
+    .itemDetail .detalles {
+        padding: 0;
+        flex: 2;
+    }
+}
+@media screen and (max-width: 930px) {
+    .itemDetail .imgContainer img {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 840px) {
+    .itemDetail {
+        flex-direction: column ;
+    }
+    .itemDetail .detalles .nombreYPrecio {
+        display: none;
+    }
+    .itemDetail  .nombreYPrecioMobile {
+        display: block;
+    }
+    .itemDetail .nombreYPrecioMobile .container{
+        display : flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .itemDetail .nombreYPrecioMobile .nombre h2{
+        color: var(--rojo);
+        font-size: 35px;
+    }
+    .itemDetail .nombreYPrecioMobile .nombre i{
+        font-size: 16px;
+        margin-left: .3em;
+    }
+    .itemDetail .nombreYPrecioMobile .nombre p{
+        font-size: 14px;
+        display: inline-block;
+        margin-left: .5em;
+        color: white;
+    }
+    .itemDetail .nombreYPrecioMobile .precio {
+        font-size: 25px;
+        color: white;
+        padding-top: 7px;
+    }
+
+    .itemDetail .imgContainer {
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .itemDetail .imgContainer .secondaryImg {
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 600px) {
+    .itemDetail .imgContainer .secondaryImg {
+        flex-direction: row;
+    }
+    .itemDetail .imgContainer .secondaryImg img {
+        width: 70px;
+    }
+    .itemDetail .imgContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .itemDetail {
+        padding-inline: 0;
+    }
+    .itemDetail .imgContainer img {
+        width: 100%;
+    }
+    .itemDetail .detalles,
+    .itemDetail .nombreYPrecioMobile {
+        padding-inline: .5em;
+    }
+    .itemDetail .imgContainer  {
+        align-items: flex-start;
+    }
+    .itemDetail .imgContainer .secondaryImg {
+        padding-inline: .5em ;
+    }
+}
