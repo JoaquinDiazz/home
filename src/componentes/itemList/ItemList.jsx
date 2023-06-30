@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./itemList.css"
 import { Link } from "react-router-dom"
 
@@ -8,7 +8,6 @@ const ItemList = ( {productos, titulo} ) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
   }
   
-
   return (
     <div>
         <div>
@@ -20,7 +19,7 @@ const ItemList = ( {productos, titulo} ) => {
             productos.map((prod) => {
             
             return <div key={prod.id} className="card">
-                        <img src={prod.img} alt={prod.nombre} />
+                        <img src={prod.img} alt={prod.nombre}/>
                         <h3>{prod.nombre}</h3>
                         <p>Precio: ${prod.precio}</p>
                         <Link to={`/item/${prod.id}`} className='verMas'>Ver mas</Link>

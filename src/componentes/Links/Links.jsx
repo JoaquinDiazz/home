@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import "./links.css"
 
 const NavLinks = ( {setMenu} ) => {
@@ -11,11 +11,11 @@ const NavLinks = ( {setMenu} ) => {
 
   return (
     <ul>
-      <li><Link to="/productos" onClick={closeMenu}>Productos</Link></li>
-      <li><Link to="/productos/mesas" onClick={closeMenu}>Mesas</Link></li>
-      <li><Link to="/productos/sillas" onClick={closeMenu}>Sillas</Link></li>
-      <li><Link to="/productos/sofas" onClick={closeMenu}>Sofas</Link></li>
-      <li><Link to="/productos/lamparas" onClick={closeMenu}>Lamparas</Link></li>
+      <li><NavLink to="/productos" onClick={closeMenu}>Productos</NavLink></li>
+      <li><NavLink to="/productos/mesas" onClick={closeMenu}>Mesas</NavLink></li>
+      <li><NavLink to="/productos/sillas" onClick={closeMenu}>Sillas</NavLink></li>
+      <li><NavLink to="/productos/sofas" onClick={closeMenu}>Sofas</NavLink></li>
+      <li><NavLink to="/productos/lamparas" onClick={closeMenu}>Lamparas</NavLink></li>
     </ul>
   )
 }

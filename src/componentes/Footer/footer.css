@@ -6,6 +6,9 @@ footer {
     align-items: center;
     color: white;
 }
+footer p {
+    text-align: center;
+}
 @media screen and (max-width: 960px) {
     footer {
         flex-direction: column;

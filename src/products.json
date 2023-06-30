@@ -1,7 +1,10 @@
 [
     {
         "nombre": "Mesa Wright",
-        "img": "../assets/wright.webp",
+        "img": "../assets/wright.jpg",
+        "img2": "../assets/wright2.jpg",
+        "img3": "../assets/wright3.jpg",
+        "img4": "../assets/wright4.jpg",
         "precio": 40000,
         "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut reiciendis commodi illum ab distinctio, veritatis nostrum adipisci atque est omnis incidunt itaque repellat doloremque ratione velit error officiis a?",
         "id": 1,
@@ -26,7 +29,7 @@
     },
     {
         "nombre": "Mesa Hall",
-        "img": "../assets/hall.webp",
+        "img": "../assets/hall.jpg",
         "img2": "../assets/hall2.jpg",
         "img3": "../assets/hall3.jpg",
         "img4": "../assets/hall4.jpg",
@@ -53,23 +56,21 @@
         "reviews": 32, 
         "categoria": "sillas",
         "stock": 10
-
-
     },
 
 
     {
         "nombre": "Mesa Thompson",
-        "img": "../assets/thompson.webp",
+        "img": "../assets/thompson.jpg",
+        "img2": "../assets/thompson2.jpg",
+        "img3": "../assets/thompson3.jpg",
+        "img4": "../assets/thompson4.jpg",
         "precio": 20000,
         "descripcion": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo ut reiciendis commodi illum ab distinctio, veritatis nostrum adipisci atque est omnis incidunt itaque repellat doloremque ratione velit error officiis a?",
         "id": 2,
         "reviews": 33,
         "categoria": "mesas",
         "stock": 10
-
-
-
     },
 
     {
