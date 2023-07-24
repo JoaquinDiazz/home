@@ -22,3 +22,15 @@
 .App {
   background-color: #11152e;
 }
+.button {
+    background-color: var(--rojo);
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}

@@ -1,0 +1,128 @@
+.checkout {
+    min-height: 70vh;
+    position: relative;
+    color: white;
+}
+form {
+    padding: 2em;
+    display: flex;
+    align-items: flex-start;
+}
+
+form .tuCompra{
+    flex: 1;
+
+}
+.checkout form .tuCompra h3 {
+    padding-bottom: .5em;
+}
+.checkout form .tuCompra .itemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1em;
+    width: 350px;
+}
+.checkout form .tuCompra .item {
+    background-color: var(--azul-oscuro);
+    display: flex;
+    flex: 1;
+    gap: 1em;
+    padding:1em ;
+    border-radius: 5px;
+}
+.checkout form .tuCompra .item img {
+    width: 8em;
+    border-radius: 5px;
+}
+.checkout form .tuCompra .item .container {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+.checkout form .tuCompra .item .container :first-child {
+    color: var(--rojo);
+    font-size: 20px;
+}
+.checkout form .tuCompra .item .container :nth-child(2) {
+    font-weight: bolder;
+}
+.checkout form .tuCompra h4 {
+    margin-top: 1em;
+
+}
+.checkout form .tuCompra h4 span{
+    color: var(--rojo);
+    font-size: 20px;
+}
+
+.checkout form .forms {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: .7em;
+}
+.checkout form .forms input {
+    padding: .8em;
+    background-color: var(--azul-oscuro);
+    color: white;
+    border: 1px solid var(--azul-oscuro);
+    width: 400px;
+
+}
+.checkout form .forms .error {
+    color: var(--rojo);
+}
+.checkout form .forms button {
+    width: 400px;
+    margin-left: 0;
+}
+
+.checkout .compraFinalizada {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+.checkout .compraFinalizada h3 {
+    white-space: nowrap;
+    padding-bottom: 1em;
+}
+.checkout .compraFinalizada h3 span {
+    color: var(--rojo);
+    font-size: 25px;
+}
+.checkout .compraFinalizada p span {
+    color: var(--rojo);
+}
+@media screen and (max-width: 850px) {
+    .checkout form {
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+@media screen and (max-width: 480px) {
+    .checkout {
+        padding-inline: .5em;
+    }
+    .checkout h2 {
+        padding-left: 0;
+    }
+    .checkout form {
+        padding-inline: 0;
+    }
+    .checkout .forms h3 {
+        text-align: center;
+    }
+    .checkout form .forms,
+    .checkout form .forms input,
+    .checkout form .forms button {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 480px) {
+    .checkout form .tuCompra .itemContainer {
+        width: 100%;
+    }
+}

@@ -1,8 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
+import { CarritoContext } from '../../context/CarritoContext'
 import ItemCounter from '../itemCounter/ItemCounter'
 import "./itemDetail.css"
 
-const ItemDetails = ( {item} ) => {
+const ItemDetails = ( {item} ) => {  
 
   const [imagen, setImagen] = useState(item.img)
     
@@ -35,12 +36,12 @@ const consologear = () => {
         </div>
 
         <div className='imgContainer'>
-          <img src={imagen} alt="" />
+          <img src={imagen} alt={item.nombre} />
           <div className='secondaryImg'>
-          <img src={item.img} alt='' onClick={() => imagenHandle(item.img)} />
-          <img src={item.img2} alt='' onClick={() => imagenHandle(item.img2)} />
-          <img src={item.img3} alt='' onClick={() => imagenHandle(item.img3)} />
-          <img src={item.img4} alt='' onClick={() => imagenHandle(item.img4)} />
+            <img src={item.img} alt={item.nombre} onClick={() => imagenHandle(item.img)} />
+            <img src={item.img2} alt={item.nombre} onClick={() => imagenHandle(item.img2)} />
+            <img src={item.img3} alt={item.nombre} onClick={() => imagenHandle(item.img3)} />
+            <img src={item.img4} alt={item.nombre} onClick={() => imagenHandle(item.img4)} />
           </div>
         </div> 
         
@@ -65,7 +66,6 @@ const consologear = () => {
               <p>{item.descripcion}</p>
             </div>
             <ItemCounter item={item}/>
-            <button>Agregar al carrito</button>
         </div>
 
     </div>

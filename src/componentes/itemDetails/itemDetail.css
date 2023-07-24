@@ -43,7 +43,7 @@
 }
 .itemDetail .detalles .nombreYPrecio {
     display: flex;
-    align-items: first baseline;
+    align-items: baseline;
     justify-content: space-between;
     border-bottom: 1px solid white;
     padding-bottom: 2em;
@@ -75,17 +75,6 @@
     font-size: 14px;
     line-height: 1.4;
     text-align: justify;
-}
-.itemDetail .detalles button {
-    background-color: var(--rojo);
-    color: white;
-    font-size: 16px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 30px;
-    margin: 0 auto;
-    border: none;
-    border-radius: 5px;
 }
 @media screen and (max-width: 1115px) {
     .itemDetail .imgContainer {

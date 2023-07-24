@@ -1,11 +1,15 @@
 .cantidadContainer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    gap: 1em;
     border-top: 1px solid white;
     padding-top: 2em;
 }
 .cantidadContainer .cantidad {
+    display: flex;
+    justify-content: space-between;
+}
+.cantidadContainer .cantidad :first-child{
     font-size:25px ;
     letter-spacing: 1px;
 }
@@ -20,4 +24,16 @@
 .cantidadContainer .numeros :last-child {
     cursor: pointer;
     font-size: 20px;
+}
+.cantidadContainer button {
+    background-color: var(--rojo);
+    color: white;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    margin: 0 auto;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
 }
