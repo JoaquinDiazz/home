@@ -9,21 +9,14 @@
 }
 .productos {
     padding: 2em;
-
-    /* display: flex;
-    justify-content: space-between;
-    flex-wrap:wrap ;
-    gap: 1em; */
-    display: grid;
-    grid-template-columns: repeat(
-        auto-fit, 
-        minmax( 16em, 18em )
-    );
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 1em;
-
     color: white;
 }
 .productos .card{
+    width: 17em;
     color: white;
     background-color: #0b0f2c;
     padding: 1em;

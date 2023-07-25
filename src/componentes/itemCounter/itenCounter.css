@@ -1,13 +1,14 @@
 .cantidadContainer {
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2em;
     border-top: 1px solid white;
     padding-top: 2em;
 }
 .cantidadContainer .cantidad {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 .cantidadContainer .cantidad :first-child{
     font-size:25px ;
@@ -32,8 +33,8 @@
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 30px;
-    margin: 0 auto;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    width: 100%;
 }

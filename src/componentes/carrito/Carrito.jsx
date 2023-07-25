@@ -2,26 +2,11 @@ import React, { useContext, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { CarritoContext } from '../../context/CarritoContext'
 import "./carrito.css"
-import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Carrito = () => {
 
     const {carrito, precioFinal, costoEnvio, precioSubTotal, vaciarCarrito, eliminarProducto} = useContext(CarritoContext) 
-
-
-    const toastify = () => {
-        toast.error('Producto eliminado', {
-          position: "top-center",
-          autoClose: 2000,
-          hideProgressBar: true,
-          closeOnClick: false,
-          pauseOnHover: true,
-          draggable: true,
-          progress: undefined,
-          theme: "light",
-          });
-      }
 
   return (
     <div className='carrito'>
@@ -55,7 +40,6 @@ const Carrito = () => {
                                     }
                                     <button className="button" onClick={() => {
                                         eliminarProducto(prod.id)
-                                        toastify()
                                     }}>
                                         Eliminar
                                     </button>

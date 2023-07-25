@@ -1,12 +1,16 @@
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useEffect, useState } from "react";
+import { json } from "react-router-dom";
 
 
 
 export const CarritoContext = createContext()
 
+const carritoInicial = JSON.parse(localStorage.getItem("carrito")) || [];
+
 export const CarritoProvider = ({children}) => {
 
-    const [carrito, setCarrito] = useState([])
+    const [carrito, setCarrito] = useState(carritoInicial)
+
 
     const agregarProducto = (item, cantidad) => {
 
@@ -50,6 +54,10 @@ export const CarritoProvider = ({children}) => {
     const precioFinal = () => {
         return precioSubTotal() + costoEnvio()
     }
+
+    useEffect(() => {
+        localStorage.setItem("carrito", JSON.stringify(carrito));
+    }, [carrito])
 
     return (
        <CarritoContext.Provider value={ {precioFinal, precioSubTotal, costoEnvio, cantidadEnCarrito, carrito, vaciarCarrito, eliminarProducto, agregarProducto} }>

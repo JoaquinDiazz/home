@@ -8,7 +8,6 @@ import { useState } from 'react';
 import Carrito from './componentes/carrito/Carrito';
 import { CarritoProvider } from './context/CarritoContext';
 import Checkout from './componentes/checkout/Checkout';
-import { ToastContainer } from 'react-toastify';
 
 function App() {
 
@@ -27,7 +26,6 @@ function App() {
             <Route path="/carrito" element={ <Carrito/> }/>
             <Route path='/checkout' element={<Checkout/>}/>
           </Routes>
-          <ToastContainer />
           <Footer />
 
         </BrowserRouter>

@@ -10,10 +10,8 @@
 .itemDetail .imgContainer {
     flex: 2;
     display: flex;
-    /* flex-direction: column; */
     align-items: start;
     gap: 1em;
-
 }
 .itemDetail .imgContainer img{
     width: 600px;
