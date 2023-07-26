@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "./itemListContainer.css"
-import data from "../../products.json"
 import ItemList from '../itemList/ItemList'
 import { useParams } from 'react-router-dom'
 import { collection, getDocs, where, query } from 'firebase/firestore'
@@ -11,12 +10,6 @@ const ItemListContainer = (props) => {
   let [productos, setProductos] = useState([])
 
   const [titulo, setTitulo] = useState("Nuestros Productos")
-
-  // const pedirProductos = () => {
-  //   return new Promise((resolve, reject) => {
-  //     resolve(data)
-  //   })
-  // }
 
   const categoria = useParams().categoria
 
